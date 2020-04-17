@@ -1,5 +1,15 @@
 ;;; ob-spark-shell --- Org mode Babel backend for spark-shell (Scala)
+
+;; Author: pepijn
+;; Keywords: languages, org, org-babel, Spark
+;; Package-Requires: ((emacs "24.1"))
+
+;; This file is NOT part of GNU Emacs.
+
 ;;; Commentary:
+
+;; org mode babel support for spark-shell
+
 ;;; Code:
 
 (require 'dash)
