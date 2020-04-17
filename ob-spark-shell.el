@@ -1,4 +1,4 @@
-;;; ob-spark-shell --- Org mode Babel backend for spark-shell (Scala)
+;;; ob-spark-shell.el --- Org mode Babel backend for spark-shell (Scala)
 
 ;; Author: pepijn
 ;; Keywords: languages, org, org-babel, Spark
@@ -112,4 +112,4 @@ Arguments are supplied through PARAMS."
 (define-derived-mode spark-shell-mode scala-mode "SparkShell")
 
 (provide 'ob-spark-shell)
-;;; ob-spark-shell ends here
+;;; ob-spark-shell.el ends here
