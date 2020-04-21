@@ -87,7 +87,7 @@ Make sure your src block has a :session param")
   "Execute BODY, a block of Scala code, in a spark-shell with org-babel.
 This function is called by `org-babel-execute-src-block'.
 Arguments are supplied through PARAMS."
-  (let ((vars (org-babel-get-header (org-babel-process-params params) :var))
+  (let ((vars nil) ;;TODO this may be useful for passing vars (org-babel-get-header (org-babel-process-params params) :var))
         (result-type (cdr (assoc :result-type params)))
         (full-body (org-babel-expand-body:generic body params))
         (session (org-babel-prep-session:spark-shell (ob-spark-shell--session-name params) params))
